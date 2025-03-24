@@ -29,7 +29,7 @@ class _RegisterState extends State<Register> {
     if (response['status'] == 200) {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => Login(),
+          builder: (context) => const Login(),
         ),
       );
     }
@@ -79,7 +79,7 @@ class _RegisterState extends State<Register> {
                     spancer(
                       w: width * 0.05,
                     ),
-                    Container(
+                    SizedBox(
                       width: width * 0.5,
                       child: const Text(
                         'We can start something new',
@@ -182,7 +182,7 @@ class _RegisterState extends State<Register> {
                       onTap: () {
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(
-                            builder: (context) => Login(),
+                            builder: (context) => const Login(),
                           ),
                         );
                       },
