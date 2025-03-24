@@ -40,7 +40,7 @@ class _LoginState extends State<Login> {
       );
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => Home(),
+          builder: (context) => const Home(),
         ),
       );
     }
@@ -90,7 +90,7 @@ class _LoginState extends State<Login> {
                     spancer(
                       w: width * 0.05,
                     ),
-                    Container(
+                    SizedBox(
                       width: width * 0.5,
                       child: const Text(
                         'A world of possibly in an App',

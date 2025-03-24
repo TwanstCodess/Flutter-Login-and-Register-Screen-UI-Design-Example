@@ -23,16 +23,16 @@ class MyApp extends StatelessWidget {
                 child: CircularProgressIndicator(),
               );
             } else if (snapshot.hasError) {
-              return Text('Some error has Occurred');
+              return const Text('Some error has Occurred');
             } else if (snapshot.hasData) {
               final token = snapshot.data!.getString('token');
               if (token != null) {
-                return Home();
+                return const Home();
               } else {
-                return Login();
+                return const Login();
               }
             } else {
-              return Login();
+              return const Login();
             }
           }),
     );

@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
     preferences.clear();
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (context) => Login(),
+        builder: (context) => const Login(),
       ),
     );
   }
@@ -57,9 +57,9 @@ class _HomeState extends State<Home> {
                     },
                     child: Center(
                       child: Container(
-                        padding: EdgeInsets.all(20),
+                        padding: const EdgeInsets.all(20),
                         color: Colors.red,
-                        child: Text(
+                        child: const Text(
                           'logout',
                           style: TextStyle(
                             color: Colors.white,
@@ -69,10 +69,10 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
-                  Text(
+                  const Text(
                     'Welcome to Home Screen',
                     style: TextStyle(
                       color: Colors.black,
@@ -82,7 +82,7 @@ class _HomeState extends State<Home> {
                   ),
                   Text(
                     'user_id: ${preferences.getInt('user_id').toString()}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _HomeState extends State<Home> {
                   ),
                   Text(
                     'Name: ${preferences.getString('name').toString()}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -98,7 +98,7 @@ class _HomeState extends State<Home> {
                   ),
                   Text(
                     'email: ${preferences.getString('email').toString()}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                   ),
                   Text(
                     'token: ${preferences.getString('token').toString()}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

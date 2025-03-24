@@ -15,7 +15,7 @@ InputField({
     child: TextFormField(
       controller: controller,
       decoration: InputDecoration(
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           color: Colors.white,
           fontSize: 22,
         ),
